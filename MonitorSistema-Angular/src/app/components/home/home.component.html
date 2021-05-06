@@ -1,0 +1,204 @@
+
+
+
+<div
+  class="min-h-screen bg-yellow-50 py-6 flex flex-col justify-center sm:py-12"
+>
+  <div class="flex px-2 justify-around">
+    <!-- CARD -->
+    <div
+      class="bg-blue-500 h-72 w-1/2 md:rounded-3xl rounded-full shadow-md relative flex flex-col items-center justify-between md:items-start py-5 md:p-5 transition-all duration-150"
+    >
+      <!-- IMG PROFILE -->
+      <img
+        class="rounded-full w-16 h-16 shadow-sm absolute -top-8 transform md:scale-100050 duration-700"
+        src="assets/imgs/svg/hard-disk-svgrepo-com.svg"
+        alt=""
+      />
+
+      <!-- TEXTS -->
+      <div
+        class="transform -rotate-90 md:rotate-0 align-middle text-2xl font-semibold text-gray-200 text-center m-auto md:m-0 md:mt-8"
+      >
+        informacion de devices
+      </div>
+      <div class="grid grid-cols-2 gap-2 align-middle  justify-items-center ">
+        <div>
+          <h3 class="py-3">unidades de disco duro</h3>
+        </div>
+        <div class="grid grid-cols-3 gap-2">
+          <select class="form-select px-4 py-3 rounded-full" [(ngModel)]="disk.label">
+            <option *ngFor="let title of listDrives" [value]="title" >
+              {{ title }}
+            </option>
+          </select>
+
+          <button
+          class="p-0 w-12 h-12 bg-green-500 rounded-full hover:bg-green-900 active:shadow-lg mouse shadow transition ease-in duration-200 focus:outline-none"
+          (click)="info()"
+        >
+          <img
+            class="w-100"
+            src="assets/imgs/svg/search-svgrepo-com.svg"
+            alt=""
+          />
+        </button>
+
+        <button
+        class="p-0 w-12 h-12 bg-green-500 rounded-full hover:bg-green-900 active:shadow-lg mouse shadow transition ease-in duration-200 focus:outline-none"
+        (click)="files()"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M3 12v3c0 1.657 3.134 3 7 3s7-1.343 7-3v-3c0 1.657-3.134 3-7 3s-7-1.343-7-3z" />
+          <path d="M3 7v3c0 1.657 3.134 3 7 3s7-1.343 7-3V7c0 1.657-3.134 3-7 3S3 8.657 3 7z" />
+        <path d="M17 5c0 1.657-3.134 3-7 3S3 6.657 3 5s3.134-3 7-3 7 1.343 7 3z" />
+        </svg>
+        </button>
+
+        </div>
+
+
+      </div>
+
+      <div class="grid grid-cols-3 gap-2 align-middle">
+        <label> espacio total </label>
+        <input
+          type="text"
+          [(ngModel)]="disk.SpaceTotal"
+          disabled
+          />
+          <label> GB</label>
+        <label> espacio usado </label>
+        <input
+          type="text"
+          [(ngModel)]="disk.SpaceUsed"
+          disabled
+          />
+          <label> GB</label>
+        <label> espacio libre </label>
+        <input
+          type="text"
+          value="{{disk.SpaceFree}} GB"
+          [(ngModel)]="disk.SpaceFree "
+          disabled
+          />
+          <label> GB</label>
+        <label> espacio dañado </label>
+        <input
+          type="text"
+          [(ngModel)]="disk.SpaceUnUsable"
+          disabled
+          />
+          <label> GB</label>
+      </div>
+
+      <!-- BUTTONS -->
+      <div class="flex w-full justify-around"></div>
+    </div>
+    <app-my-doughnut-chart class="w-1/2 "[labels]="labels" [data]="data"></app-my-doughnut-chart>
+  </div>
+  <!-- <div class="flex items-center px-10  justify-center">
+
+    <table class="table-fixed">
+      <thead>
+        <tr>
+          <th class="w-1/4" >Nombre</th>
+          <th class="w-1/4">tamaño</th>
+          <th class="w-1/4">typo/extension</th>
+          <th class="w-1/4">Views</th>
+        </tr>
+      </thead>
+      <tbody divide-y divide-gray-200>
+        <tr *ngFor="let data of listFiles">
+          <td>{{data.label}}</td>
+          <td>{{getGigas(data.size) | number: '1.0-2'}} MB</td>
+          <td>{{data.type}}</td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div> -->
+
+  <!-- component -->
+<!-- This is an example component -->
+<div class=" flex items-center px-4">
+  <div class='overflow-x-auto w-full'>
+
+      <!-- Table -->
+      <table class='mx-auto max-w-4xl w-full whitespace-nowrap rounded-lg bg-white divide-y divide-gray-300 overflow-hidden'>
+          <thead class="bg-gray-50">
+              <tr class="text-gray-600 text-left">
+                  <th class="font-semibold text-sm uppercase px-6 py-4">
+                      nombre
+                  </th>
+                  <th class="font-semibold text-sm uppercase px-6 py-4">
+                      Tamaño
+                  </th>
+                  <th class="font-semibold text-sm uppercase px-6 py-4 text-center">
+                      tipo/ extension
+                  </th>
+                  <th class="font-semibold text-sm uppercase px-6 py-4 text-center">
+
+                  </th>
+                  <th class="font-semibold text-sm uppercase px-6 py-4">
+                      acciones
+                  </th>
+              </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-200">
+              <tr *ngFor="let data of listFiles">
+                  <td class="px-6 py-4">
+                      <div class="flex items-center space-x-3">
+                          <div class="inline-flex w-10 h-10">
+                              <!-- <img
+                                class='w-10 h-10 object-cover rounded-full'
+                                alt='User avatar'
+                                src='https://images.unsplash.com/photo-1477118476589-bff2c5c4cfbb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=200&q=200'>
+                              <img class='w-10 h-10 object-cover rounded-full' alt='User avatar' src='https://images.unsplash.com/photo-1477118476589-bff2c5c4cfbb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=200&q=200'> -->
+                              <svg *ngIf=data.isfolder xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z" />
+                              </svg>
+                              <svg *ngIf=data.isFile xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
+                              </svg>
+
+                            </div>
+                          <div>
+                              <p class="">
+                                {{data.label}}
+                              </p>
+                              <p class="text-gray-500 text-sm font-semibold tracking-wide">
+                                {{data.label}}
+                              </p>
+                          </div>
+                      </div>
+                  </td>
+                  <td class="px-6 py-4">
+                      <p class="">
+                        {{getGigas(data.size) | number: '1.0-2'}} MB
+                      </p>
+                      <p class="text-gray-500 text-sm font-semibold tracking-wide">
+                          espacio en disco
+                      </p>
+                  </td>
+                  <td class="px-6 py-4 text-center">
+                      <span class="text-green-800 bg-green-200 font-semibold px-2 rounded-full">
+                        {{data.type}}
+                      </span>
+                  </td>
+                  <td class="px-6 py-4 text-center">
+                    <!-- {{data.type}} -->
+                  </td>
+                  <td class="px-6 py-4 text-center">
+                      <a href="#" class="text-purple-800 hover:underline">acciones</a>
+                  </td>
+              </tr>
+          </tbody>
+      </table>
+
+  </div>
+</div>
+
+
+
+</div>

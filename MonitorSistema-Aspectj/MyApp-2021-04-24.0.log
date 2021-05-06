@@ -1,0 +1,684 @@
+2021-04-24 12:49:17.415  INFO 25908 --- [restartedMain] c.u.M.MonitorSistemaApplication          : Starting MonitorSistemaApplication using Java 16.0.1 on DESKTOP-RHKQ58S with PID 25908 (E:\Develop\JAVA\U\MonitorSistema-Aspectj\target\classes started by k.key in E:\Develop\JAVA\U\MonitorSistema-Aspectj)
+2021-04-24 12:49:17.415 DEBUG 25908 --- [restartedMain] c.u.M.MonitorSistemaApplication          : Running with Spring Boot v2.5.0-SNAPSHOT, Spring v5.3.6
+2021-04-24 12:49:17.415  INFO 25908 --- [restartedMain] c.u.M.MonitorSistemaApplication          : No active profile set, falling back to default profiles: default
+2021-04-24 12:49:17.542  INFO 25908 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-24 12:49:17.544  INFO 25908 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2021-04-24 12:49:17.651  INFO 25908 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-24 12:49:17.652  INFO 25908 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-24 12:49:17.652  INFO 25908 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-04-24 12:49:17.666  INFO 25908 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-24 12:49:17.666  INFO 25908 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 249 ms
+2021-04-24 12:49:17.683  INFO 25908 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2021-04-24 12:49:17.685  INFO 25908 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2021-04-24 12:49:17.685  INFO 25908 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:037bdf02-c843-4b99-81c3-a867330f7065'
+2021-04-24 12:49:17.711  INFO 25908 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-24 12:49:17.715  INFO 25908 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-04-24 12:49:17.721  INFO 25908 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-24 12:49:17.721  INFO 25908 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-24 12:49:17.739  INFO 25908 --- [restartedMain] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.utils.OSUtils]
+2021-04-24 12:49:17.742  INFO 25908 --- [restartedMain] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.utils.OSUtils]; exec time (ms): 3
+2021-04-24 12:49:17.766  WARN 25908 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-24 12:49:17.896  INFO 25908 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-24 12:49:18.069  INFO 25908 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-24 12:49:18.084  INFO 25908 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-24 12:49:18.087  INFO 25908 --- [restartedMain] c.u.M.MonitorSistemaApplication          : Started MonitorSistemaApplication in 0.696 seconds (JVM running for 194.535)
+2021-04-24 12:49:18.088  INFO 25908 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-04-24 12:49:18.090  INFO 25908 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-04-24 12:49:18.090  INFO 25908 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-04-24 12:49:30.792  INFO 25908 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-24 12:49:30.793  INFO 25908 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-24 12:49:30.793  INFO 25908 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-04-24 12:49:30.800  INFO 25908 --- [http-nio-8080-exec-2] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.SpaceUsed]
+2021-04-24 12:49:30.804  INFO 25908 --- [http-nio-8080-exec-2] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.SpaceUsed]; exec time (ms): 4
+2021-04-24 12:52:49.680  INFO 25908 --- [Thread-9] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2021-04-24 12:52:49.701  INFO 25908 --- [Thread-9] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-24 12:52:49.703  INFO 25908 --- [Thread-9] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-24 12:52:49.703  INFO 25908 --- [Thread-9] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-04-24 12:52:49.914  WARN 25908 --- [Thread-9] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos ya esta cerrada (para des-habilitar el cerrado automatico durante el shutdown de la VM, agregue ";DB_CLOSE_ON_EXIT=FALSE" a la URL de conexión)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2021-04-24 12:52:49.914  INFO 25908 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2021-04-24 12:52:49.915  INFO 25908 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2021-04-24 12:52:49.975  INFO 25908 --- [restartedMain] c.u.M.MonitorSistemaApplication          : Starting MonitorSistemaApplication using Java 16.0.1 on DESKTOP-RHKQ58S with PID 25908 (E:\Develop\JAVA\U\MonitorSistema-Aspectj\target\classes started by k.key in E:\Develop\JAVA\U\MonitorSistema-Aspectj)
+2021-04-24 12:52:49.975 DEBUG 25908 --- [restartedMain] c.u.M.MonitorSistemaApplication          : Running with Spring Boot v2.5.0-SNAPSHOT, Spring v5.3.6
+2021-04-24 12:52:49.975  INFO 25908 --- [restartedMain] c.u.M.MonitorSistemaApplication          : No active profile set, falling back to default profiles: default
+2021-04-24 12:52:50.094  INFO 25908 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-24 12:52:50.095  INFO 25908 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2021-04-24 12:52:50.194  INFO 25908 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-24 12:52:50.194  INFO 25908 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-24 12:52:50.195  INFO 25908 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-04-24 12:52:50.208  INFO 25908 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-24 12:52:50.208  INFO 25908 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 230 ms
+2021-04-24 12:52:50.224  INFO 25908 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2021-04-24 12:52:50.226  INFO 25908 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2021-04-24 12:52:50.226  INFO 25908 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:befe9431-c609-4aae-94a3-d41bbf345497'
+2021-04-24 12:52:50.253  INFO 25908 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-24 12:52:50.256  INFO 25908 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-04-24 12:52:50.262  INFO 25908 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-24 12:52:50.262  INFO 25908 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-24 12:52:50.280  INFO 25908 --- [restartedMain] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.utils.OSUtils]
+2021-04-24 12:52:50.282  INFO 25908 --- [restartedMain] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.utils.OSUtils]; exec time (ms): 3
+2021-04-24 12:52:50.306  WARN 25908 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-24 12:52:50.431  INFO 25908 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-24 12:57:59.667  INFO 59084 --- [restartedMain] c.u.M.MonitorSistemaApplication          : Starting MonitorSistemaApplication using Java 16.0.1 on DESKTOP-RHKQ58S with PID 59084 (E:\Develop\JAVA\U\MonitorSistema-Aspectj\target\classes started by k.key in E:\Develop\JAVA\U\MonitorSistema-Aspectj)
+2021-04-24 12:57:59.670 DEBUG 59084 --- [restartedMain] c.u.M.MonitorSistemaApplication          : Running with Spring Boot v2.5.0-SNAPSHOT, Spring v5.3.6
+2021-04-24 12:57:59.671  INFO 59084 --- [restartedMain] c.u.M.MonitorSistemaApplication          : No active profile set, falling back to default profiles: default
+2021-04-24 12:57:59.697  INFO 59084 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-24 12:57:59.697  INFO 59084 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-24 12:58:00.079  INFO 59084 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-24 12:58:00.088  INFO 59084 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+2021-04-24 12:58:00.596  INFO 59084 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-24 12:58:00.601  INFO 59084 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-24 12:58:00.601  INFO 59084 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-04-24 12:58:00.653  INFO 59084 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-24 12:58:00.654  INFO 59084 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 956 ms
+2021-04-24 12:58:00.699  INFO 59084 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-24 12:58:00.759  INFO 59084 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-24 12:58:00.763  INFO 59084 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:179778fd-d6f2-4e0d-af97-8458db8827a4'
+2021-04-24 12:58:00.929  INFO 59084 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-24 12:58:00.954  INFO 59084 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.30.Final
+2021-04-24 12:58:01.015  INFO 59084 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-24 12:58:01.078  INFO 59084 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-04-24 12:58:01.177  INFO 59084 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-24 12:58:01.182  INFO 59084 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-24 12:58:01.216  INFO 59084 --- [restartedMain] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.utils.OSUtils]
+2021-04-24 12:58:01.224  INFO 59084 --- [restartedMain] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.utils.OSUtils]; exec time (ms): 8
+2021-04-24 12:58:01.289  WARN 59084 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-24 12:58:01.672  INFO 59084 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-24 12:58:02.168  INFO 59084 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-24 12:58:02.208  INFO 59084 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-24 12:58:02.217  INFO 59084 --- [restartedMain] c.u.M.MonitorSistemaApplication          : Started MonitorSistemaApplication in 2.757 seconds (JVM running for 3.255)
+2021-04-24 12:58:02.218  INFO 59084 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-04-24 12:58:02.219  INFO 59084 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-04-24 13:01:03.475  INFO 59084 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-24 13:01:03.475  INFO 59084 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-24 13:01:03.476  INFO 59084 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-24 13:01:17.227  INFO 59084 --- [http-nio-8080-exec-3] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 13:01:17.232  INFO 59084 --- [http-nio-8080-exec-3] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 5
+2021-04-24 16:17:28.196  INFO 59084 --- [http-nio-8080-exec-6] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 16:17:28.204  INFO 59084 --- [http-nio-8080-exec-6] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 8
+2021-04-24 16:18:34.588  INFO 59084 --- [http-nio-8080-exec-9] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 16:18:34.588  INFO 59084 --- [http-nio-8080-exec-9] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 1
+2021-04-24 16:50:37.668  INFO 59084 --- [http-nio-8080-exec-10] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 16:50:37.669  INFO 59084 --- [http-nio-8080-exec-10] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 1
+2021-04-24 16:55:44.896  INFO 59084 --- [Thread-6] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2021-04-24 16:55:44.999  INFO 59084 --- [Thread-6] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-24 16:55:45.001  INFO 59084 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-24 16:55:45.007  INFO 59084 --- [Thread-6] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-04-24 16:55:45.246  WARN 59084 --- [Thread-6] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos ya esta cerrada (para des-habilitar el cerrado automatico durante el shutdown de la VM, agregue ";DB_CLOSE_ON_EXIT=FALSE" a la URL de conexión)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2021-04-24 16:55:45.247  INFO 59084 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-04-24 16:55:45.253  INFO 59084 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-04-24 16:55:45.456  INFO 59084 --- [restartedMain] c.u.M.MonitorSistemaApplication          : Starting MonitorSistemaApplication using Java 16.0.1 on DESKTOP-RHKQ58S with PID 59084 (E:\Develop\JAVA\U\MonitorSistema-Aspectj\target\classes started by k.key in E:\Develop\JAVA\U\MonitorSistema-Aspectj)
+2021-04-24 16:55:45.456 DEBUG 59084 --- [restartedMain] c.u.M.MonitorSistemaApplication          : Running with Spring Boot v2.5.0-SNAPSHOT, Spring v5.3.6
+2021-04-24 16:55:45.456  INFO 59084 --- [restartedMain] c.u.M.MonitorSistemaApplication          : No active profile set, falling back to default profiles: default
+2021-04-24 16:55:45.678  INFO 59084 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-24 16:55:45.680  INFO 59084 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2021-04-24 16:55:45.836  INFO 59084 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-24 16:55:45.837  INFO 59084 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-24 16:55:45.837  INFO 59084 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-04-24 16:55:45.853  INFO 59084 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-24 16:55:45.853  INFO 59084 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 394 ms
+2021-04-24 16:55:45.881  INFO 59084 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2021-04-24 16:55:45.884  INFO 59084 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2021-04-24 16:55:45.885  INFO 59084 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:852635b0-70b7-46dd-9327-fbebad417eba'
+2021-04-24 16:59:50.695  INFO 64000 --- [restartedMain] c.u.M.MonitorSistemaApplication          : Starting MonitorSistemaApplication using Java 16.0.1 on DESKTOP-RHKQ58S with PID 64000 (E:\Develop\JAVA\U\MonitorSistema-Aspectj\target\classes started by k.key in E:\Develop\JAVA\U\MonitorSistema-Aspectj)
+2021-04-24 16:59:50.697 DEBUG 64000 --- [restartedMain] c.u.M.MonitorSistemaApplication          : Running with Spring Boot v2.5.0-SNAPSHOT, Spring v5.3.6
+2021-04-24 16:59:50.697  INFO 64000 --- [restartedMain] c.u.M.MonitorSistemaApplication          : No active profile set, falling back to default profiles: default
+2021-04-24 16:59:50.725  INFO 64000 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-24 16:59:50.725  INFO 64000 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-24 16:59:51.099  INFO 64000 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-24 16:59:51.108  INFO 64000 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+2021-04-24 16:59:51.626  INFO 64000 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-24 16:59:51.632  INFO 64000 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-24 16:59:51.632  INFO 64000 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-04-24 16:59:51.692  INFO 64000 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-24 16:59:51.692  INFO 64000 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 967 ms
+2021-04-24 16:59:51.740  INFO 64000 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-24 16:59:51.801  INFO 64000 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-24 16:59:51.804  INFO 64000 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:c5eeb4b3-7599-422e-a73f-eef4546d6e9c'
+2021-04-24 16:59:51.893  INFO 64000 --- [restartedMain] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.init]
+2021-04-24 16:59:51.901  INFO 64000 --- [restartedMain] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.init]; exec time (ms): 8
+2021-04-24 16:59:51.995  INFO 64000 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-24 16:59:52.021  INFO 64000 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.30.Final
+2021-04-24 16:59:52.083  INFO 64000 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-24 16:59:52.140  INFO 64000 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-04-24 16:59:52.243  INFO 64000 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-24 16:59:52.249  INFO 64000 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-24 16:59:52.270  INFO 64000 --- [restartedMain] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.utils.OSUtils]
+2021-04-24 16:59:52.274  INFO 64000 --- [restartedMain] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.utils.OSUtils]; exec time (ms): 4
+2021-04-24 16:59:52.337  WARN 64000 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-24 16:59:52.712  INFO 64000 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-24 16:59:53.201  INFO 64000 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-24 16:59:53.240  INFO 64000 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-24 16:59:53.249  INFO 64000 --- [restartedMain] c.u.M.MonitorSistemaApplication          : Started MonitorSistemaApplication in 2.77 seconds (JVM running for 3.35)
+2021-04-24 16:59:53.250  INFO 64000 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-04-24 16:59:53.251  INFO 64000 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-04-24 17:00:03.254  INFO 64000 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-24 17:00:03.254  INFO 64000 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-24 17:00:03.255  INFO 64000 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-24 17:00:03.257  INFO 64000 --- [http-nio-8080-exec-1] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 17:00:03.257  INFO 64000 --- [http-nio-8080-exec-1] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 0
+2021-04-24 17:00:03.262  INFO 64000 --- [http-nio-8080-exec-3] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 17:00:03.320  INFO 64000 --- [http-nio-8080-exec-3] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 17:00:03.328  INFO 64000 --- [http-nio-8080-exec-3] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 8
+2021-04-24 17:00:03.360  INFO 64000 --- [http-nio-8080-exec-3] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 98
+2021-04-24 17:41:12.087  INFO 64000 --- [http-nio-8080-exec-4] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 17:41:12.089  INFO 64000 --- [http-nio-8080-exec-4] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 17:41:12.090  INFO 64000 --- [http-nio-8080-exec-4] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 1
+2021-04-24 17:41:12.092  INFO 64000 --- [http-nio-8080-exec-4] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 5
+2021-04-24 17:41:13.810  INFO 64000 --- [http-nio-8080-exec-5] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 17:41:13.811  INFO 64000 --- [http-nio-8080-exec-5] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 17:41:13.812  INFO 64000 --- [http-nio-8080-exec-5] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 1
+2021-04-24 17:41:13.813  INFO 64000 --- [http-nio-8080-exec-5] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 3
+2021-04-24 17:50:09.237  INFO 64000 --- [http-nio-8080-exec-7] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 17:50:09.239  INFO 64000 --- [http-nio-8080-exec-7] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 17:50:09.239  INFO 64000 --- [http-nio-8080-exec-7] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 17:50:09.241  INFO 64000 --- [http-nio-8080-exec-7] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 4
+2021-04-24 17:51:02.387  INFO 64000 --- [http-nio-8080-exec-8] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 17:51:02.388  INFO 64000 --- [http-nio-8080-exec-8] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 17:51:02.388  INFO 64000 --- [http-nio-8080-exec-8] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 17:51:02.390  INFO 64000 --- [http-nio-8080-exec-8] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 3
+2021-04-24 17:51:32.258  INFO 64000 --- [http-nio-8080-exec-9] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 17:51:32.259  INFO 64000 --- [http-nio-8080-exec-9] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 17:51:32.260  INFO 64000 --- [http-nio-8080-exec-9] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 1
+2021-04-24 17:51:32.262  INFO 64000 --- [http-nio-8080-exec-9] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 4
+2021-04-24 17:55:31.963  INFO 64000 --- [http-nio-8080-exec-1] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 17:55:31.965  INFO 64000 --- [http-nio-8080-exec-1] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 17:55:31.965  INFO 64000 --- [http-nio-8080-exec-1] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 17:55:31.967  INFO 64000 --- [http-nio-8080-exec-1] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 4
+2021-04-24 17:56:34.811  INFO 64000 --- [http-nio-8080-exec-2] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 17:56:34.812  INFO 64000 --- [http-nio-8080-exec-2] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 17:56:34.813  INFO 64000 --- [http-nio-8080-exec-2] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 1
+2021-04-24 17:56:34.815  INFO 64000 --- [http-nio-8080-exec-2] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 4
+2021-04-24 17:57:20.418  INFO 64000 --- [http-nio-8080-exec-4] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 17:57:20.419  INFO 64000 --- [http-nio-8080-exec-4] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 17:57:20.420  INFO 64000 --- [http-nio-8080-exec-4] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 1
+2021-04-24 17:57:20.422  INFO 64000 --- [http-nio-8080-exec-4] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 4
+2021-04-24 17:57:46.198  INFO 64000 --- [http-nio-8080-exec-5] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 17:57:46.200  INFO 64000 --- [http-nio-8080-exec-5] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 17:57:46.201  INFO 64000 --- [http-nio-8080-exec-5] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 1
+2021-04-24 17:57:46.203  INFO 64000 --- [http-nio-8080-exec-5] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 5
+2021-04-24 18:02:16.768  INFO 64000 --- [http-nio-8080-exec-7] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:02:16.768  INFO 64000 --- [http-nio-8080-exec-7] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 0
+2021-04-24 18:02:16.774  INFO 64000 --- [http-nio-8080-exec-8] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:02:16.775  INFO 64000 --- [http-nio-8080-exec-8] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:02:16.775  INFO 64000 --- [http-nio-8080-exec-8] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 18:02:16.776  INFO 64000 --- [http-nio-8080-exec-8] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 2
+2021-04-24 18:03:47.592  INFO 64000 --- [http-nio-8080-exec-10] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:03:47.593  INFO 64000 --- [http-nio-8080-exec-10] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:03:47.593  INFO 64000 --- [http-nio-8080-exec-10] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 18:03:47.595  INFO 64000 --- [http-nio-8080-exec-10] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 3
+2021-04-24 18:04:07.635  INFO 64000 --- [http-nio-8080-exec-1] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:04:07.636  INFO 64000 --- [http-nio-8080-exec-1] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:04:07.637  INFO 64000 --- [http-nio-8080-exec-1] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 1
+2021-04-24 18:04:07.638  INFO 64000 --- [http-nio-8080-exec-1] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 3
+2021-04-24 18:04:12.881  INFO 64000 --- [http-nio-8080-exec-3] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:04:12.883  INFO 64000 --- [http-nio-8080-exec-3] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:04:12.883  INFO 64000 --- [http-nio-8080-exec-3] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 18:04:12.884  INFO 64000 --- [http-nio-8080-exec-3] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 3
+2021-04-24 18:04:35.707  INFO 64000 --- [http-nio-8080-exec-2] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:04:35.709  INFO 64000 --- [http-nio-8080-exec-2] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:04:35.709  INFO 64000 --- [http-nio-8080-exec-2] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 18:04:35.711  INFO 64000 --- [http-nio-8080-exec-2] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 4
+2021-04-24 18:04:39.871  INFO 64000 --- [http-nio-8080-exec-4] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:04:39.874  INFO 64000 --- [http-nio-8080-exec-4] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:04:39.874  INFO 64000 --- [http-nio-8080-exec-4] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 18:04:39.876  INFO 64000 --- [http-nio-8080-exec-4] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 5
+2021-04-24 18:04:44.368  INFO 64000 --- [http-nio-8080-exec-5] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:04:44.369  INFO 64000 --- [http-nio-8080-exec-5] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:04:44.369  INFO 64000 --- [http-nio-8080-exec-5] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 18:04:44.370  INFO 64000 --- [http-nio-8080-exec-5] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 2
+2021-04-24 18:04:48.551  INFO 64000 --- [http-nio-8080-exec-6] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:04:48.552  INFO 64000 --- [http-nio-8080-exec-6] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:04:48.552  INFO 64000 --- [http-nio-8080-exec-6] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 18:04:48.554  INFO 64000 --- [http-nio-8080-exec-6] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 3
+2021-04-24 18:08:40.298  INFO 64000 --- [http-nio-8080-exec-8] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:08:40.299  INFO 64000 --- [http-nio-8080-exec-8] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:08:40.300  INFO 64000 --- [http-nio-8080-exec-8] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 1
+2021-04-24 18:08:40.301  INFO 64000 --- [http-nio-8080-exec-8] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 3
+2021-04-24 18:09:06.091  INFO 64000 --- [http-nio-8080-exec-9] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:09:06.092  INFO 64000 --- [http-nio-8080-exec-9] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:09:06.092  INFO 64000 --- [http-nio-8080-exec-9] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 18:09:06.093  INFO 64000 --- [http-nio-8080-exec-9] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 2
+2021-04-24 18:09:58.899  INFO 64000 --- [http-nio-8080-exec-10] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:09:58.900  INFO 64000 --- [http-nio-8080-exec-10] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:09:58.901  INFO 64000 --- [http-nio-8080-exec-10] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 1
+2021-04-24 18:09:58.902  INFO 64000 --- [http-nio-8080-exec-10] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 3
+2021-04-24 18:10:24.871  INFO 64000 --- [http-nio-8080-exec-1] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:10:24.872  INFO 64000 --- [http-nio-8080-exec-1] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:10:24.872  INFO 64000 --- [http-nio-8080-exec-1] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 18:10:24.874  INFO 64000 --- [http-nio-8080-exec-1] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 3
+2021-04-24 18:10:33.099  INFO 64000 --- [http-nio-8080-exec-3] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:10:33.100  INFO 64000 --- [http-nio-8080-exec-3] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:10:33.101  INFO 64000 --- [http-nio-8080-exec-3] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 1
+2021-04-24 18:10:33.102  INFO 64000 --- [http-nio-8080-exec-3] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 3
+2021-04-24 18:11:25.919  INFO 64000 --- [http-nio-8080-exec-2] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:11:25.920  INFO 64000 --- [http-nio-8080-exec-2] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:11:25.920  INFO 64000 --- [http-nio-8080-exec-2] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 18:11:25.922  INFO 64000 --- [http-nio-8080-exec-2] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 3
+2021-04-24 18:16:30.729  INFO 64000 --- [http-nio-8080-exec-5] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:16:30.730  INFO 64000 --- [http-nio-8080-exec-5] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:16:30.731  INFO 64000 --- [http-nio-8080-exec-5] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 1
+2021-04-24 18:16:30.732  INFO 64000 --- [http-nio-8080-exec-5] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 3
+2021-04-24 18:16:51.310  INFO 64000 --- [http-nio-8080-exec-6] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:16:51.311  INFO 64000 --- [http-nio-8080-exec-6] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:16:51.311  INFO 64000 --- [http-nio-8080-exec-6] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 18:16:51.314  INFO 64000 --- [http-nio-8080-exec-6] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 4
+2021-04-24 18:18:09.817  INFO 64000 --- [http-nio-8080-exec-8] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:18:09.818  INFO 64000 --- [http-nio-8080-exec-8] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:18:09.818  INFO 64000 --- [http-nio-8080-exec-8] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 18:18:09.820  INFO 64000 --- [http-nio-8080-exec-8] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 2
+2021-04-24 18:21:08.719  INFO 64000 --- [http-nio-8080-exec-10] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:21:08.720  INFO 64000 --- [http-nio-8080-exec-10] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:21:08.721  INFO 64000 --- [http-nio-8080-exec-10] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 1
+2021-04-24 18:21:08.722  INFO 64000 --- [http-nio-8080-exec-10] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 3
+2021-04-24 18:21:12.965  INFO 64000 --- [http-nio-8080-exec-1] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:21:12.966  INFO 64000 --- [http-nio-8080-exec-1] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:21:12.966  INFO 64000 --- [http-nio-8080-exec-1] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 18:21:12.968  INFO 64000 --- [http-nio-8080-exec-1] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 3
+2021-04-24 18:30:07.293  INFO 64000 --- [http-nio-8080-exec-2] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:30:07.295  INFO 64000 --- [http-nio-8080-exec-2] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:30:07.295  INFO 64000 --- [http-nio-8080-exec-2] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 18:30:07.297  INFO 64000 --- [http-nio-8080-exec-2] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 4
+2021-04-24 18:30:12.484  INFO 64000 --- [http-nio-8080-exec-4] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:30:12.485  INFO 64000 --- [http-nio-8080-exec-4] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:30:12.485  INFO 64000 --- [http-nio-8080-exec-4] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 18:30:12.487  INFO 64000 --- [http-nio-8080-exec-4] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 3
+2021-04-24 18:30:35.998  INFO 64000 --- [http-nio-8080-exec-5] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:30:35.999  INFO 64000 --- [http-nio-8080-exec-5] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:30:35.999  INFO 64000 --- [http-nio-8080-exec-5] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 18:30:36.000  INFO 64000 --- [http-nio-8080-exec-5] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 2
+2021-04-24 18:30:54.390  INFO 64000 --- [http-nio-8080-exec-6] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:30:54.392  INFO 64000 --- [http-nio-8080-exec-6] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:30:54.392  INFO 64000 --- [http-nio-8080-exec-6] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 18:30:54.394  INFO 64000 --- [http-nio-8080-exec-6] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 4
+2021-04-24 18:32:53.688  INFO 64000 --- [http-nio-8080-exec-8] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:32:53.689  INFO 64000 --- [http-nio-8080-exec-8] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:32:53.689  INFO 64000 --- [http-nio-8080-exec-8] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 18:32:53.690  INFO 64000 --- [http-nio-8080-exec-8] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 2
+2021-04-24 18:38:10.980  INFO 64000 --- [http-nio-8080-exec-10] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:38:10.981  INFO 64000 --- [http-nio-8080-exec-10] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:38:10.982  INFO 64000 --- [http-nio-8080-exec-10] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 1
+2021-04-24 18:38:10.983  INFO 64000 --- [http-nio-8080-exec-10] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 3
+2021-04-24 18:38:28.954  INFO 64000 --- [http-nio-8080-exec-1] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:38:28.955  INFO 64000 --- [http-nio-8080-exec-1] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:38:28.956  INFO 64000 --- [http-nio-8080-exec-1] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 1
+2021-04-24 18:38:28.957  INFO 64000 --- [http-nio-8080-exec-1] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 3
+2021-04-24 18:41:52.557  INFO 64000 --- [http-nio-8080-exec-2] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:41:52.558  INFO 64000 --- [http-nio-8080-exec-2] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:41:52.558  INFO 64000 --- [http-nio-8080-exec-2] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 18:41:52.559  INFO 64000 --- [http-nio-8080-exec-2] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 2
+2021-04-24 18:42:04.529  INFO 64000 --- [http-nio-8080-exec-4] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:42:04.530  INFO 64000 --- [http-nio-8080-exec-4] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:42:04.530  INFO 64000 --- [http-nio-8080-exec-4] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 18:42:04.531  INFO 64000 --- [http-nio-8080-exec-4] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 2
+2021-04-24 18:42:08.861  INFO 64000 --- [http-nio-8080-exec-5] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:42:08.862  INFO 64000 --- [http-nio-8080-exec-5] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:42:08.862  INFO 64000 --- [http-nio-8080-exec-5] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 18:42:08.863  INFO 64000 --- [http-nio-8080-exec-5] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 2
+2021-04-24 18:42:15.171  INFO 64000 --- [http-nio-8080-exec-6] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:42:15.172  INFO 64000 --- [http-nio-8080-exec-6] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:42:15.173  INFO 64000 --- [http-nio-8080-exec-6] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 1
+2021-04-24 18:42:15.174  INFO 64000 --- [http-nio-8080-exec-6] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 3
+2021-04-24 18:42:22.603  INFO 64000 --- [http-nio-8080-exec-7] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:42:22.605  INFO 64000 --- [http-nio-8080-exec-7] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:42:22.605  INFO 64000 --- [http-nio-8080-exec-7] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 18:42:22.606  INFO 64000 --- [http-nio-8080-exec-7] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 3
+2021-04-24 18:42:29.950  INFO 64000 --- [http-nio-8080-exec-8] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:42:29.952  INFO 64000 --- [http-nio-8080-exec-8] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:42:29.952  INFO 64000 --- [http-nio-8080-exec-8] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 18:42:29.954  INFO 64000 --- [http-nio-8080-exec-8] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 4
+2021-04-24 18:42:35.315  INFO 64000 --- [http-nio-8080-exec-9] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:42:35.316  INFO 64000 --- [http-nio-8080-exec-9] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:42:35.316  INFO 64000 --- [http-nio-8080-exec-9] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 18:42:35.317  INFO 64000 --- [http-nio-8080-exec-9] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 2
+2021-04-24 18:42:43.128  INFO 64000 --- [http-nio-8080-exec-10] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:42:43.129  INFO 64000 --- [http-nio-8080-exec-10] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:42:43.129  INFO 64000 --- [http-nio-8080-exec-10] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 18:42:43.130  INFO 64000 --- [http-nio-8080-exec-10] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 2
+2021-04-24 18:42:51.452  INFO 64000 --- [http-nio-8080-exec-1] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:42:51.453  INFO 64000 --- [http-nio-8080-exec-1] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:42:51.454  INFO 64000 --- [http-nio-8080-exec-1] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 1
+2021-04-24 18:42:51.455  INFO 64000 --- [http-nio-8080-exec-1] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 3
+2021-04-24 18:42:53.062  INFO 64000 --- [http-nio-8080-exec-3] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:42:53.063  INFO 64000 --- [http-nio-8080-exec-3] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:42:53.063  INFO 64000 --- [http-nio-8080-exec-3] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 18:42:53.064  INFO 64000 --- [http-nio-8080-exec-3] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 2
+2021-04-24 18:42:57.812  INFO 64000 --- [http-nio-8080-exec-2] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:42:57.813  INFO 64000 --- [http-nio-8080-exec-2] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:42:57.813  INFO 64000 --- [http-nio-8080-exec-2] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 18:42:57.814  INFO 64000 --- [http-nio-8080-exec-2] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 2
+2021-04-24 18:44:44.239  INFO 64000 --- [http-nio-8080-exec-5] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:44:44.240  INFO 64000 --- [http-nio-8080-exec-5] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:44:44.241  INFO 64000 --- [http-nio-8080-exec-5] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 1
+2021-04-24 18:44:44.242  INFO 64000 --- [http-nio-8080-exec-5] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 3
+2021-04-24 18:44:49.772  INFO 64000 --- [http-nio-8080-exec-6] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:44:49.773  INFO 64000 --- [http-nio-8080-exec-6] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:44:49.773  INFO 64000 --- [http-nio-8080-exec-6] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 18:44:49.775  INFO 64000 --- [http-nio-8080-exec-6] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 3
+2021-04-24 18:44:55.876  INFO 64000 --- [http-nio-8080-exec-7] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:44:55.878  INFO 64000 --- [http-nio-8080-exec-7] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:44:55.878  INFO 64000 --- [http-nio-8080-exec-7] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 18:44:55.879  INFO 64000 --- [http-nio-8080-exec-7] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 3
+2021-04-24 18:45:04.247  INFO 64000 --- [http-nio-8080-exec-8] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:45:04.248  INFO 64000 --- [http-nio-8080-exec-8] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:45:04.248  INFO 64000 --- [http-nio-8080-exec-8] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 18:45:04.250  INFO 64000 --- [http-nio-8080-exec-8] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 3
+2021-04-24 18:45:11.438  INFO 64000 --- [http-nio-8080-exec-9] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:45:11.439  INFO 64000 --- [http-nio-8080-exec-9] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:45:11.440  INFO 64000 --- [http-nio-8080-exec-9] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 1
+2021-04-24 18:45:11.441  INFO 64000 --- [http-nio-8080-exec-9] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 3
+2021-04-24 18:45:16.117  INFO 64000 --- [http-nio-8080-exec-10] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:45:16.119  INFO 64000 --- [http-nio-8080-exec-10] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:45:16.119  INFO 64000 --- [http-nio-8080-exec-10] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 18:45:16.120  INFO 64000 --- [http-nio-8080-exec-10] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 3
+2021-04-24 18:45:21.730  INFO 64000 --- [http-nio-8080-exec-1] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:45:21.731  INFO 64000 --- [http-nio-8080-exec-1] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:45:21.732  INFO 64000 --- [http-nio-8080-exec-1] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 1
+2021-04-24 18:45:21.733  INFO 64000 --- [http-nio-8080-exec-1] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 3
+2021-04-24 18:45:27.144  INFO 64000 --- [http-nio-8080-exec-3] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:45:27.145  INFO 64000 --- [http-nio-8080-exec-3] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:45:27.145  INFO 64000 --- [http-nio-8080-exec-3] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 18:45:27.146  INFO 64000 --- [http-nio-8080-exec-3] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 2
+2021-04-24 18:45:34.377  INFO 64000 --- [http-nio-8080-exec-2] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:45:34.378  INFO 64000 --- [http-nio-8080-exec-2] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:45:34.379  INFO 64000 --- [http-nio-8080-exec-2] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 1
+2021-04-24 18:45:34.380  INFO 64000 --- [http-nio-8080-exec-2] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 3
+2021-04-24 18:45:37.644  INFO 64000 --- [http-nio-8080-exec-4] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:45:37.645  INFO 64000 --- [http-nio-8080-exec-4] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:45:37.646  INFO 64000 --- [http-nio-8080-exec-4] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 1
+2021-04-24 18:45:37.647  INFO 64000 --- [http-nio-8080-exec-4] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 3
+2021-04-24 18:45:46.798  INFO 64000 --- [http-nio-8080-exec-5] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:45:46.799  INFO 64000 --- [http-nio-8080-exec-5] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:45:46.799  INFO 64000 --- [http-nio-8080-exec-5] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 18:45:46.800  INFO 64000 --- [http-nio-8080-exec-5] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 2
+2021-04-24 18:47:01.461  INFO 64000 --- [http-nio-8080-exec-7] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:47:01.462  INFO 64000 --- [http-nio-8080-exec-7] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:47:01.462  INFO 64000 --- [http-nio-8080-exec-7] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 18:47:01.464  INFO 64000 --- [http-nio-8080-exec-7] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 3
+2021-04-24 18:47:12.907  INFO 64000 --- [http-nio-8080-exec-8] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:47:12.909  INFO 64000 --- [http-nio-8080-exec-8] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:47:12.909  INFO 64000 --- [http-nio-8080-exec-8] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 18:47:12.910  INFO 64000 --- [http-nio-8080-exec-8] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 3
+2021-04-24 18:47:27.374  INFO 64000 --- [http-nio-8080-exec-9] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:47:27.375  INFO 64000 --- [http-nio-8080-exec-9] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:47:27.375  INFO 64000 --- [http-nio-8080-exec-9] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 18:47:27.377  INFO 64000 --- [http-nio-8080-exec-9] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 3
+2021-04-24 18:47:31.860  INFO 64000 --- [http-nio-8080-exec-10] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:47:31.861  INFO 64000 --- [http-nio-8080-exec-10] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:47:31.862  INFO 64000 --- [http-nio-8080-exec-10] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 1
+2021-04-24 18:47:31.863  INFO 64000 --- [http-nio-8080-exec-10] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 3
+2021-04-24 18:47:38.348  INFO 64000 --- [http-nio-8080-exec-1] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:47:38.349  INFO 64000 --- [http-nio-8080-exec-1] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:47:38.350  INFO 64000 --- [http-nio-8080-exec-1] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 1
+2021-04-24 18:47:38.351  INFO 64000 --- [http-nio-8080-exec-1] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 3
+2021-04-24 18:47:41.124  INFO 64000 --- [http-nio-8080-exec-3] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:47:41.126  INFO 64000 --- [http-nio-8080-exec-3] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:47:41.126  INFO 64000 --- [http-nio-8080-exec-3] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 18:47:41.128  INFO 64000 --- [http-nio-8080-exec-3] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 4
+2021-04-24 18:47:44.426  INFO 64000 --- [http-nio-8080-exec-2] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:47:44.427  INFO 64000 --- [http-nio-8080-exec-2] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:47:44.428  INFO 64000 --- [http-nio-8080-exec-2] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 1
+2021-04-24 18:47:44.429  INFO 64000 --- [http-nio-8080-exec-2] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 3
+2021-04-24 18:47:47.173  INFO 64000 --- [http-nio-8080-exec-4] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:47:47.174  INFO 64000 --- [http-nio-8080-exec-4] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:47:47.174  INFO 64000 --- [http-nio-8080-exec-4] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 18:47:47.175  INFO 64000 --- [http-nio-8080-exec-4] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 2
+2021-04-24 18:48:05.170  INFO 64000 --- [http-nio-8080-exec-5] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:48:05.171  INFO 64000 --- [http-nio-8080-exec-5] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:48:05.172  INFO 64000 --- [http-nio-8080-exec-5] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 1
+2021-04-24 18:48:05.172  INFO 64000 --- [http-nio-8080-exec-5] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 2
+2021-04-24 18:48:28.312  INFO 64000 --- [http-nio-8080-exec-6] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:48:28.313  INFO 64000 --- [http-nio-8080-exec-6] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:48:28.313  INFO 64000 --- [http-nio-8080-exec-6] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 18:48:28.314  INFO 64000 --- [http-nio-8080-exec-6] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 2
+2021-04-24 18:50:00.300  INFO 64000 --- [http-nio-8080-exec-8] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:50:00.300  INFO 64000 --- [http-nio-8080-exec-8] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:50:00.301  INFO 64000 --- [http-nio-8080-exec-8] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 1
+2021-04-24 18:50:00.302  INFO 64000 --- [http-nio-8080-exec-8] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 2
+2021-04-24 18:50:16.947  INFO 64000 --- [http-nio-8080-exec-9] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:50:16.948  INFO 64000 --- [http-nio-8080-exec-9] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:50:16.948  INFO 64000 --- [http-nio-8080-exec-9] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 18:50:16.949  INFO 64000 --- [http-nio-8080-exec-9] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 2
+2021-04-24 18:50:17.936  INFO 64000 --- [http-nio-8080-exec-10] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:50:17.937  INFO 64000 --- [http-nio-8080-exec-10] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:50:17.937  INFO 64000 --- [http-nio-8080-exec-10] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 18:50:17.938  INFO 64000 --- [http-nio-8080-exec-10] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 2
+2021-04-24 18:50:33.258  INFO 64000 --- [http-nio-8080-exec-1] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:50:33.259  INFO 64000 --- [http-nio-8080-exec-1] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:50:33.259  INFO 64000 --- [http-nio-8080-exec-1] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 18:50:33.261  INFO 64000 --- [http-nio-8080-exec-1] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 3
+2021-04-24 18:50:42.598  INFO 64000 --- [http-nio-8080-exec-3] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:50:42.599  INFO 64000 --- [http-nio-8080-exec-3] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:50:42.599  INFO 64000 --- [http-nio-8080-exec-3] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 18:50:42.601  INFO 64000 --- [http-nio-8080-exec-3] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 3
+2021-04-24 18:50:55.202  INFO 64000 --- [http-nio-8080-exec-2] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:50:55.203  INFO 64000 --- [http-nio-8080-exec-2] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:50:55.203  INFO 64000 --- [http-nio-8080-exec-2] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 18:50:55.205  INFO 64000 --- [http-nio-8080-exec-2] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 3
+2021-04-24 18:51:00.391  INFO 64000 --- [http-nio-8080-exec-4] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:51:00.392  INFO 64000 --- [http-nio-8080-exec-4] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:51:00.392  INFO 64000 --- [http-nio-8080-exec-4] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 18:51:00.393  INFO 64000 --- [http-nio-8080-exec-4] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 2
+2021-04-24 18:51:12.627  INFO 64000 --- [http-nio-8080-exec-5] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:51:12.628  INFO 64000 --- [http-nio-8080-exec-5] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:51:12.628  INFO 64000 --- [http-nio-8080-exec-5] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 18:51:12.629  INFO 64000 --- [http-nio-8080-exec-5] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 2
+2021-04-24 18:52:25.247  INFO 64000 --- [http-nio-8080-exec-7] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:52:25.248  INFO 64000 --- [http-nio-8080-exec-7] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:52:25.249  INFO 64000 --- [http-nio-8080-exec-7] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 1
+2021-04-24 18:52:25.250  INFO 64000 --- [http-nio-8080-exec-7] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 3
+2021-04-24 18:52:55.369  INFO 64000 --- [http-nio-8080-exec-8] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:52:55.370  INFO 64000 --- [http-nio-8080-exec-8] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:52:55.370  INFO 64000 --- [http-nio-8080-exec-8] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 18:52:55.372  INFO 64000 --- [http-nio-8080-exec-8] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 3
+2021-04-24 18:53:07.752  INFO 64000 --- [http-nio-8080-exec-9] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:53:07.753  INFO 64000 --- [http-nio-8080-exec-9] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:53:07.754  INFO 64000 --- [http-nio-8080-exec-9] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 1
+2021-04-24 18:53:07.755  INFO 64000 --- [http-nio-8080-exec-9] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 3
+2021-04-24 18:53:37.096  INFO 64000 --- [http-nio-8080-exec-10] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:53:37.097  INFO 64000 --- [http-nio-8080-exec-10] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:53:37.097  INFO 64000 --- [http-nio-8080-exec-10] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 18:53:37.098  INFO 64000 --- [http-nio-8080-exec-10] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 2
+2021-04-24 18:53:51.316  INFO 64000 --- [http-nio-8080-exec-1] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:53:51.317  INFO 64000 --- [http-nio-8080-exec-1] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:53:51.317  INFO 64000 --- [http-nio-8080-exec-1] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 18:53:51.318  INFO 64000 --- [http-nio-8080-exec-1] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 2
+2021-04-24 18:53:59.420  INFO 64000 --- [http-nio-8080-exec-3] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:53:59.421  INFO 64000 --- [http-nio-8080-exec-3] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:53:59.421  INFO 64000 --- [http-nio-8080-exec-3] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 18:53:59.422  INFO 64000 --- [http-nio-8080-exec-3] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 2
+2021-04-24 18:54:11.413  INFO 64000 --- [http-nio-8080-exec-2] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:54:11.413  INFO 64000 --- [http-nio-8080-exec-2] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:54:11.414  INFO 64000 --- [http-nio-8080-exec-2] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 1
+2021-04-24 18:54:11.415  INFO 64000 --- [http-nio-8080-exec-2] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 2
+2021-04-24 18:55:05.975  INFO 64000 --- [http-nio-8080-exec-4] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:55:05.976  INFO 64000 --- [http-nio-8080-exec-4] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:55:05.977  INFO 64000 --- [http-nio-8080-exec-4] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 1
+2021-04-24 18:55:05.978  INFO 64000 --- [http-nio-8080-exec-4] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 3
+2021-04-24 18:55:16.681  INFO 64000 --- [http-nio-8080-exec-5] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:55:16.682  INFO 64000 --- [http-nio-8080-exec-5] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:55:16.683  INFO 64000 --- [http-nio-8080-exec-5] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 1
+2021-04-24 18:55:16.684  INFO 64000 --- [http-nio-8080-exec-5] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 3
+2021-04-24 18:55:24.323  INFO 64000 --- [http-nio-8080-exec-6] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:55:24.325  INFO 64000 --- [http-nio-8080-exec-6] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:55:24.325  INFO 64000 --- [http-nio-8080-exec-6] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 18:55:24.326  INFO 64000 --- [http-nio-8080-exec-6] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 3
+2021-04-24 18:55:46.965  INFO 64000 --- [http-nio-8080-exec-7] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:55:46.966  INFO 64000 --- [http-nio-8080-exec-7] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:55:46.966  INFO 64000 --- [http-nio-8080-exec-7] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 18:55:46.968  INFO 64000 --- [http-nio-8080-exec-7] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 3
+2021-04-24 18:55:59.970  INFO 64000 --- [http-nio-8080-exec-8] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:55:59.971  INFO 64000 --- [http-nio-8080-exec-8] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:55:59.971  INFO 64000 --- [http-nio-8080-exec-8] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 18:55:59.973  INFO 64000 --- [http-nio-8080-exec-8] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 3
+2021-04-24 18:56:08.473  INFO 64000 --- [http-nio-8080-exec-9] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:56:08.474  INFO 64000 --- [http-nio-8080-exec-9] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:56:08.475  INFO 64000 --- [http-nio-8080-exec-9] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 1
+2021-04-24 18:56:08.476  INFO 64000 --- [http-nio-8080-exec-9] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 3
+2021-04-24 18:56:23.240  INFO 64000 --- [http-nio-8080-exec-10] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:56:23.241  INFO 64000 --- [http-nio-8080-exec-10] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:56:23.241  INFO 64000 --- [http-nio-8080-exec-10] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 18:56:23.243  INFO 64000 --- [http-nio-8080-exec-10] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 3
+2021-04-24 18:56:29.015  INFO 64000 --- [http-nio-8080-exec-1] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:56:29.016  INFO 64000 --- [http-nio-8080-exec-1] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:56:29.016  INFO 64000 --- [http-nio-8080-exec-1] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 18:56:29.017  INFO 64000 --- [http-nio-8080-exec-1] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 2
+2021-04-24 18:56:40.280  INFO 64000 --- [http-nio-8080-exec-3] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:56:40.281  INFO 64000 --- [http-nio-8080-exec-3] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:56:40.282  INFO 64000 --- [http-nio-8080-exec-3] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 1
+2021-04-24 18:56:40.282  INFO 64000 --- [http-nio-8080-exec-3] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 2
+2021-04-24 18:56:50.753  INFO 64000 --- [http-nio-8080-exec-2] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:56:50.754  INFO 64000 --- [http-nio-8080-exec-2] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:56:50.754  INFO 64000 --- [http-nio-8080-exec-2] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 18:56:50.755  INFO 64000 --- [http-nio-8080-exec-2] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 2
+2021-04-24 18:56:57.974  INFO 64000 --- [http-nio-8080-exec-4] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:56:57.975  INFO 64000 --- [http-nio-8080-exec-4] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:56:57.975  INFO 64000 --- [http-nio-8080-exec-4] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 18:56:57.976  INFO 64000 --- [http-nio-8080-exec-4] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 2
+2021-04-24 18:57:00.809  INFO 64000 --- [http-nio-8080-exec-5] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:57:00.810  INFO 64000 --- [http-nio-8080-exec-5] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:57:00.811  INFO 64000 --- [http-nio-8080-exec-5] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 1
+2021-04-24 18:57:00.812  INFO 64000 --- [http-nio-8080-exec-5] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 3
+2021-04-24 18:57:10.820  INFO 64000 --- [http-nio-8080-exec-6] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:57:10.821  INFO 64000 --- [http-nio-8080-exec-6] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:57:10.821  INFO 64000 --- [http-nio-8080-exec-6] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 18:57:10.822  INFO 64000 --- [http-nio-8080-exec-6] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 2
+2021-04-24 18:57:15.807  INFO 64000 --- [http-nio-8080-exec-7] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:57:15.808  INFO 64000 --- [http-nio-8080-exec-7] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:57:15.808  INFO 64000 --- [http-nio-8080-exec-7] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 18:57:15.809  INFO 64000 --- [http-nio-8080-exec-7] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 2
+2021-04-24 18:57:26.406  INFO 64000 --- [http-nio-8080-exec-8] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:57:26.407  INFO 64000 --- [http-nio-8080-exec-8] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:57:26.407  INFO 64000 --- [http-nio-8080-exec-8] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 18:57:26.408  INFO 64000 --- [http-nio-8080-exec-8] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 2
+2021-04-24 18:57:29.771  INFO 64000 --- [http-nio-8080-exec-9] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:57:29.772  INFO 64000 --- [http-nio-8080-exec-9] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:57:29.772  INFO 64000 --- [http-nio-8080-exec-9] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 18:57:29.773  INFO 64000 --- [http-nio-8080-exec-9] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 2
+2021-04-24 18:57:56.111  INFO 64000 --- [http-nio-8080-exec-10] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:57:56.112  INFO 64000 --- [http-nio-8080-exec-10] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:57:56.112  INFO 64000 --- [http-nio-8080-exec-10] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 18:57:56.113  INFO 64000 --- [http-nio-8080-exec-10] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 2
+2021-04-24 18:59:29.719  INFO 64000 --- [http-nio-8080-exec-3] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:59:29.720  INFO 64000 --- [http-nio-8080-exec-3] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:59:29.720  INFO 64000 --- [http-nio-8080-exec-3] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 18:59:29.721  INFO 64000 --- [http-nio-8080-exec-3] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 2
+2021-04-24 18:59:44.567  INFO 64000 --- [http-nio-8080-exec-2] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:59:44.568  INFO 64000 --- [http-nio-8080-exec-2] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:59:44.568  INFO 64000 --- [http-nio-8080-exec-2] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 18:59:44.569  INFO 64000 --- [http-nio-8080-exec-2] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 2
+2021-04-24 18:59:59.007  INFO 64000 --- [http-nio-8080-exec-4] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 18:59:59.008  INFO 64000 --- [http-nio-8080-exec-4] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 18:59:59.008  INFO 64000 --- [http-nio-8080-exec-4] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 18:59:59.009  INFO 64000 --- [http-nio-8080-exec-4] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 2
+2021-04-24 19:00:01.217  INFO 64000 --- [http-nio-8080-exec-5] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 19:00:01.218  INFO 64000 --- [http-nio-8080-exec-5] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 19:00:01.218  INFO 64000 --- [http-nio-8080-exec-5] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 19:00:01.219  INFO 64000 --- [http-nio-8080-exec-5] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 2
+2021-04-24 19:00:05.537  INFO 64000 --- [http-nio-8080-exec-6] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 19:00:05.538  INFO 64000 --- [http-nio-8080-exec-6] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 19:00:05.538  INFO 64000 --- [http-nio-8080-exec-6] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 19:00:05.539  INFO 64000 --- [http-nio-8080-exec-6] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 2
+2021-04-24 19:00:34.813  INFO 64000 --- [http-nio-8080-exec-7] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 19:00:34.814  INFO 64000 --- [http-nio-8080-exec-7] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 19:00:34.814  INFO 64000 --- [http-nio-8080-exec-7] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 19:00:34.815  INFO 64000 --- [http-nio-8080-exec-7] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 2
+2021-04-24 19:03:16.329  INFO 64000 --- [http-nio-8080-exec-9] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 19:03:16.329  INFO 64000 --- [http-nio-8080-exec-9] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 0
+2021-04-24 19:03:16.332  INFO 64000 --- [http-nio-8080-exec-10] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 19:03:16.333  INFO 64000 --- [http-nio-8080-exec-10] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 19:03:16.333  INFO 64000 --- [http-nio-8080-exec-10] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 19:03:16.334  INFO 64000 --- [http-nio-8080-exec-10] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 2
+2021-04-24 19:03:45.883  INFO 64000 --- [http-nio-8080-exec-1] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 19:03:45.884  INFO 64000 --- [http-nio-8080-exec-1] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 19:03:45.884  INFO 64000 --- [http-nio-8080-exec-1] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 19:03:45.885  INFO 64000 --- [http-nio-8080-exec-1] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 2
+2021-04-24 19:04:01.965  INFO 64000 --- [http-nio-8080-exec-3] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 19:04:01.965  INFO 64000 --- [http-nio-8080-exec-3] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 19:04:01.965  INFO 64000 --- [http-nio-8080-exec-3] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 19:04:01.966  INFO 64000 --- [http-nio-8080-exec-3] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 1
+2021-04-24 19:05:11.767  INFO 64000 --- [http-nio-8080-exec-4] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 19:05:11.768  INFO 64000 --- [http-nio-8080-exec-4] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 19:05:11.768  INFO 64000 --- [http-nio-8080-exec-4] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 19:05:11.769  INFO 64000 --- [http-nio-8080-exec-4] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 2
+2021-04-24 19:05:35.192  INFO 64000 --- [http-nio-8080-exec-5] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 19:05:35.192  INFO 64000 --- [http-nio-8080-exec-5] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 19:05:35.193  INFO 64000 --- [http-nio-8080-exec-5] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 1
+2021-04-24 19:05:35.193  INFO 64000 --- [http-nio-8080-exec-5] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 1
+2021-04-24 19:05:39.900  INFO 64000 --- [http-nio-8080-exec-6] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 19:05:39.902  INFO 64000 --- [http-nio-8080-exec-6] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 19:05:39.902  INFO 64000 --- [http-nio-8080-exec-6] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 19:05:39.903  INFO 64000 --- [http-nio-8080-exec-6] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 3
+2021-04-24 19:05:44.706  INFO 64000 --- [http-nio-8080-exec-7] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 19:05:44.707  INFO 64000 --- [http-nio-8080-exec-7] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 19:05:44.707  INFO 64000 --- [http-nio-8080-exec-7] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 19:05:44.708  INFO 64000 --- [http-nio-8080-exec-7] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 2
+2021-04-24 19:05:47.135  INFO 64000 --- [http-nio-8080-exec-8] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 19:05:47.136  INFO 64000 --- [http-nio-8080-exec-8] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 19:05:47.136  INFO 64000 --- [http-nio-8080-exec-8] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 19:05:47.137  INFO 64000 --- [http-nio-8080-exec-8] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 2
+2021-04-24 19:05:50.653  INFO 64000 --- [http-nio-8080-exec-9] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 19:05:50.654  INFO 64000 --- [http-nio-8080-exec-9] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 19:05:50.654  INFO 64000 --- [http-nio-8080-exec-9] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 19:05:50.655  INFO 64000 --- [http-nio-8080-exec-9] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 2
+2021-04-24 19:05:58.246  INFO 64000 --- [http-nio-8080-exec-10] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 19:05:58.247  INFO 64000 --- [http-nio-8080-exec-10] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 19:05:58.247  INFO 64000 --- [http-nio-8080-exec-10] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 19:05:58.248  INFO 64000 --- [http-nio-8080-exec-10] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 2
+2021-04-24 19:06:01.989  INFO 64000 --- [http-nio-8080-exec-1] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 19:06:01.989  INFO 64000 --- [http-nio-8080-exec-1] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 19:06:01.990  INFO 64000 --- [http-nio-8080-exec-1] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 1
+2021-04-24 19:06:01.991  INFO 64000 --- [http-nio-8080-exec-1] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 2
+2021-04-24 19:06:07.385  INFO 64000 --- [http-nio-8080-exec-3] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 19:06:07.386  INFO 64000 --- [http-nio-8080-exec-3] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 19:06:07.386  INFO 64000 --- [http-nio-8080-exec-3] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 19:06:07.387  INFO 64000 --- [http-nio-8080-exec-3] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 2
+2021-04-24 19:06:11.365  INFO 64000 --- [http-nio-8080-exec-2] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 19:06:11.365  INFO 64000 --- [http-nio-8080-exec-2] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 19:06:11.366  INFO 64000 --- [http-nio-8080-exec-2] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 1
+2021-04-24 19:06:11.367  INFO 64000 --- [http-nio-8080-exec-2] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 3
+2021-04-24 19:06:30.876  INFO 64000 --- [http-nio-8080-exec-4] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 19:06:30.877  INFO 64000 --- [http-nio-8080-exec-4] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 19:06:30.877  INFO 64000 --- [http-nio-8080-exec-4] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 19:06:30.878  INFO 64000 --- [http-nio-8080-exec-4] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 2
+2021-04-24 19:06:45.671  INFO 64000 --- [http-nio-8080-exec-5] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 19:06:45.672  INFO 64000 --- [http-nio-8080-exec-5] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 19:06:45.672  INFO 64000 --- [http-nio-8080-exec-5] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 19:06:45.673  INFO 64000 --- [http-nio-8080-exec-5] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 2
+2021-04-24 19:06:48.335  INFO 64000 --- [http-nio-8080-exec-6] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 19:06:48.336  INFO 64000 --- [http-nio-8080-exec-6] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 19:06:48.336  INFO 64000 --- [http-nio-8080-exec-6] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 19:06:48.337  INFO 64000 --- [http-nio-8080-exec-6] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 2
+2021-04-24 19:06:49.926  INFO 64000 --- [http-nio-8080-exec-7] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 19:06:49.927  INFO 64000 --- [http-nio-8080-exec-7] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 19:06:49.927  INFO 64000 --- [http-nio-8080-exec-7] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 19:06:49.928  INFO 64000 --- [http-nio-8080-exec-7] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 2
+2021-04-24 19:07:13.035  INFO 64000 --- [http-nio-8080-exec-8] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 19:07:13.036  INFO 64000 --- [http-nio-8080-exec-8] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 19:07:13.036  INFO 64000 --- [http-nio-8080-exec-8] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 19:07:13.037  INFO 64000 --- [http-nio-8080-exec-8] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 2
+2021-04-24 19:07:36.475  INFO 64000 --- [http-nio-8080-exec-9] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 19:07:36.476  INFO 64000 --- [http-nio-8080-exec-9] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 19:07:36.476  INFO 64000 --- [http-nio-8080-exec-9] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 19:07:36.477  INFO 64000 --- [http-nio-8080-exec-9] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 2
+2021-04-24 19:07:43.048  INFO 64000 --- [http-nio-8080-exec-10] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 19:07:43.049  INFO 64000 --- [http-nio-8080-exec-10] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 19:07:43.050  INFO 64000 --- [http-nio-8080-exec-10] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 1
+2021-04-24 19:07:43.050  INFO 64000 --- [http-nio-8080-exec-10] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 2
+2021-04-24 19:07:50.621  INFO 64000 --- [http-nio-8080-exec-1] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 19:07:50.621  INFO 64000 --- [http-nio-8080-exec-1] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 19:07:50.622  INFO 64000 --- [http-nio-8080-exec-1] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 1
+2021-04-24 19:07:50.623  INFO 64000 --- [http-nio-8080-exec-1] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 2
+2021-04-24 19:08:07.624  INFO 64000 --- [http-nio-8080-exec-3] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 19:08:07.625  INFO 64000 --- [http-nio-8080-exec-3] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 19:08:07.626  INFO 64000 --- [http-nio-8080-exec-3] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 1
+2021-04-24 19:08:07.627  INFO 64000 --- [http-nio-8080-exec-3] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 3
+2021-04-24 19:08:26.720  INFO 64000 --- [http-nio-8080-exec-2] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 19:08:26.721  INFO 64000 --- [http-nio-8080-exec-2] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 19:08:26.721  INFO 64000 --- [http-nio-8080-exec-2] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 19:08:26.722  INFO 64000 --- [http-nio-8080-exec-2] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 2
+2021-04-24 19:09:58.739  INFO 64000 --- [http-nio-8080-exec-6] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]
+2021-04-24 19:09:58.740  INFO 64000 --- [http-nio-8080-exec-6] com.uniminuto.MonitorSistema.AOP.Audit   : ingresando al  metodo [com.uniminuto.MonitorSistema.rest.DriveController.drives]
+2021-04-24 19:09:58.740  INFO 64000 --- [http-nio-8080-exec-6] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.rest.DriveController.drives]; exec time (ms): 0
+2021-04-24 19:09:58.741  INFO 64000 --- [http-nio-8080-exec-6] com.uniminuto.MonitorSistema.AOP.Audit   : m [com.uniminuto.MonitorSistema.config.CorsFilterConfiguration.doFilter]; exec time (ms): 2

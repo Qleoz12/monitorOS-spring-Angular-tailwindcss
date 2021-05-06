@@ -1,0 +1,108 @@
+<div class="flex flex-row-wrap">
+  <div class="flex-1 py-10">
+    <app-my-line-chart
+      #mylinechart
+      class="w-1/2"
+      [labels]="labels"
+      [datainput]="data"
+      [generallabel]="generallabel"
+      [chartOptions]="options"
+    ></app-my-line-chart>
+  </div>
+  <div class="flex-1">
+    <div
+      class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl"
+    >
+      <div class="md:flex">
+        <div class="p-8">
+          <div
+            class="uppercase tracking-wide text-sm text-indigo-500 font-semibold"
+          >
+            Informacion de memoria RAM
+          </div>
+          <!-- <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Finding customers for your new business</a> -->
+          <p class="mt-2 text-gray-500">
+            La memoria de acceso aleatorio (Random Access Memory, RAM) se utiliza como memoria de trabajo de computadoras y otros dispositivos para el sistema operativo, los programas y la mayor parte del software. En la RAM se cargan todas las instrucciones que ejecuta la unidad central de procesamiento (CPU) y otras unidades del computador, además de contener los datos que manipulan los distintos programas.
+
+            Se denominan «de acceso aleatorio» porque se puede leer o escribir en una posición de memoria con un tiempo de espera igual para cualquier posición, no siendo necesario seguir un orden para acceder (acceso secuencial) a la información de la manera más rápida posible.
+          </p>
+          <div
+            class="text-center mt-2 leading-none flex justify-between w-full"
+          >
+            <span
+              class="mr-3 inline-flex items-center leading-none text-sm py-1"
+            >
+              total
+            </span>
+            <span class="inline-flex items-center leading-none text-sm">
+              {{ current.total }}
+            </span>
+          </div>
+          <div
+            class="text-center mt-2 leading-none flex justify-between w-full"
+          >
+            <span
+              class="mr-3 inline-flex items-center leading-none text-sm py-1"
+            >
+              disponible
+            </span>
+            <span class="inline-flex items-center leading-none text-sm">
+              {{ current.available }}
+            </span>
+          </div>
+          <div
+            class="text-center mt-2 leading-none flex justify-between w-full"
+          >
+            <span
+              class="mr-3 inline-flex items-center leading-none text-sm py-1"
+            >
+              pageSize
+            </span>
+            <span class="inline-flex items-center leading-none text-sm">
+              {{ current.pageSize }}
+            </span>
+          </div>
+
+          <div
+            class="flex items-center mt-4 text-gray-700 dark:text-gray-200"
+            *ngFor="let ramslot of current.physicalMemory"
+          >
+            <svg
+              class="h-8 w-8 text-red-500"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <rect x="4" y="4" width="16" height="16" rx="2" ry="2" />
+              <rect x="9" y="9" width="6" height="6" />
+              <line x1="9" y1="1" x2="9" y2="4" />
+              <line x1="15" y1="1" x2="15" y2="4" />
+              <line x1="9" y1="20" x2="9" y2="23" />
+              <line x1="15" y1="20" x2="15" y2="23" />
+              <line x1="20" y1="9" x2="23" y2="9" />
+              <line x1="20" y1="14" x2="23" y2="14" />
+              <line x1="1" y1="9" x2="4" y2="9" />
+              <line x1="1" y1="14" x2="4" y2="14" />
+            </svg>
+            <h1 class="px-2 text-sm">
+              {{ ramslot.bankLabel }}
+            </h1>
+            <h1 class="px-2 text-sm">
+              tipo: {{ ramslot.memoryType }}
+            </h1>
+            <h1 class="px-2 text-sm">
+
+              capacidad: {{ ramslot.capacity }}
+            </h1>
+            <h1 class="px-2 text-sm">
+              velocidad: {{ ramslot.clockSpeed }}
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
